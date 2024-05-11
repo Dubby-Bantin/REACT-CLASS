@@ -1,0 +1,17 @@
+.parent ul{
+    margin-top: 1rem;
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem ;
+}
+
+.parent ul li:hover{
+    cursor: pointer;
+}
+
+.active{
+    color: aqua;
+}

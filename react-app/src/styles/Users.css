@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    text-align: left;
+    padding: 2rem;
+    height: 40rem;
+    font-size: 1.5rem;
+    /* border: 1px solid white; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+thead tr {
+    background-color: rgba(124, 122, 122, .2);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(124, 122, 122, .2);
+}
+
+th, td {
+    padding: .2rem 0.4rem;
+}
+
+.deleteBtn {
+    background: red ;
+    padding: 1rem 4rem;
+    transition: all .3s;
+    font-size: 1.1rem;
+}
+
+.deleteBtn:hover { 
+    background: rgb(134, 4, 4);
+}

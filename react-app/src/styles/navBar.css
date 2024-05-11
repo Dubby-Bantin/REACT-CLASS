@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: .5rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+img {
+    height: 50px;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    color: white;
+}
+
+.header ul li:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.reactLogo img {
+    animation: spin 5s linear infinite forwards;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

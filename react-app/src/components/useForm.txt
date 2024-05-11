@@ -1,0 +1,33 @@
+const {register, handleSubmit, formState:{errors}} = useForm()
+
+
+
+    const handleFormSubmit = (data) => {
+        console.log(data);
+    }
+    
+    return (
+        <div className="form-container">
+        <form onSubmit={handleSubmit((data) => handleFormSubmit(data))}>
+            <div>
+            <label htmlFor="email">First name</label>
+            <input type="text" id="firstname" {...register('firstname', {required: true, minLength:3})}/>
+            {errors.firstname && <span style={{color: "red"}}>firstname is required</span>}
+            </div>
+
+
+            <div>
+            <label htmlFor="email">Last name</label>
+            <input type="text" id="lastname" {...register('lastname')}/>
+            </div>
+
+
+            <div>
+            <label htmlFor="email">Email</label>
+            <input type="text" id="email" {...register('email')}/>
+            </div>
+
+            <button>Submit</button>
+        </form>
+        </div>
+    )

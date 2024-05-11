@@ -1,0 +1,10 @@
+.title {
+    margin-bottom: .6rem;
+}
+
+.body {
+    width: 50%;
+    font-size: 1.1rem;
+    /* text-align: center; */
+    margin-left: 2rem
+}

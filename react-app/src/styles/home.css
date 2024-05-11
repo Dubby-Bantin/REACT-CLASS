@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.homePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    margin-top: 10rem;
+}
